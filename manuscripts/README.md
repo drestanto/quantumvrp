@@ -10,7 +10,7 @@ This folder includes, but is not limited to, the following types of documents:
 
 * **Literature Reviews**: Comprehensive reviews of existing research in quantum optimization and VRP.
 
-* **Experiment Write-ups**: Detailed reports on specific experiments, including methodology, results, and analysis (e.g., QAOA VRP experiment write-ups).
+* **Write-ups**: Detailed reports on specific experiments, including methodology, results, and analysis (e.g., QAOA VRP experiment write-ups).
 
 * **Progress Reports / Learning Plans**: Documents tracking the project's progress, learning objectives, and future plans.
 
