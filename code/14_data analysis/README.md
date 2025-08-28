@@ -30,6 +30,10 @@ This directory contains the Jupyter Notebook and output data for analyzing the p
 
       * **Purpose**: This document outlines the theoretical framework and comprehensive plan for the data analysis. It details the methodologies for calculations and the expected insights derived from evaluating the quantum VRP algorithm.
 
+  * `picX.png`:
+
+      * **Purpose**: This PNG is the output of the jupyter notebook file.
+
 -----
 
 ## Workflow
