@@ -21,3 +21,7 @@ naive_adjacency,waste_collection_area,56,4,512,yes
 node_visit_time,waste_collection_area,56,4,512,yes
 naive_adjacency,waste_collection_area,56,5,512,yes
 node_visit_time,waste_collection_area,56,5,512,yes
+node_visit_time,waste_collection_area,56,2,128,yes
+node_visit_time,waste_collection_area,56,2,256,yes
+node_visit_time,waste_collection_area,56,2,1024,yes
+node_visit_time,waste_collection_area,56,2,2048,no
