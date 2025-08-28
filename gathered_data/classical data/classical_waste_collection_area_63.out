@@ -1,0 +1,18 @@
+Log started for classical experiment: waste_collection_area, 63
+
+--- Running Classical Experiment: Cluster=waste_collection_area, ID=63 ---
+
+STEP 0: Loading VRP data for waste_collection_area ID 63...
+VRP data loaded successfully for Waste Collection Area ID 63.
+Nodes: [63, 335, 714, 715, 716]
+Depot: 63
+Customers: [335, 714, 715, 716]
+Total number of nodes (including depot): 5
+Minimum Distance = 4.103 km
+Worst Distance (Maximum) = 6.813 km
+Average Distance = 5.458 km
+Time processed: 0.0157 seconds
+
+Classical benchmark results for this run have been appended to 'out_classical.csv'
+Classical experiment finished successfully!
+Classical experiment for entry 6 marked as 'done'.
