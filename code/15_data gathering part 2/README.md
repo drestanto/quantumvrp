@@ -1,6 +1,7 @@
-# 13\_data\_gathering/
+# 15\_data\_gathering\_part2/
 
 This directory contains scripts and data for solving the Vehicle Routing Problem (VRP) using both classical brute-force methods and the Quantum Approximate Optimization Algorithm (QAOA). It also includes a robust system for batch processing and benchmarking these approaches.
+This is the same with folder numbered 13, but with more and more data
 
 -----
 
