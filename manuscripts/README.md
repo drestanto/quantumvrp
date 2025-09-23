@@ -20,6 +20,8 @@ This folder includes, but is not limited to, the following types of documents:
 
 * **Revisions**: Iterative versions of key documents, reflecting feedback and refinements.
 
+* **Slides**: Presentation slides used for oral explanation such as oral presentation to subject coordinator and informal presentation to supervisor(s).
+
 ## Purpose
 
 The primary purpose of this directory is to:
