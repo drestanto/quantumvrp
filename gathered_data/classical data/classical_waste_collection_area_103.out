@@ -11,7 +11,7 @@ Total number of nodes (including depot): 4
 Minimum Distance = 4.833 km
 Worst Distance (Maximum) = 4.833 km
 Average Distance = 4.833 km
-Time processed: 0.0170 seconds
+Time processed: 0.0161 seconds
 
 Classical benchmark results for this run have been appended to 'out_classical.csv'
 Classical experiment finished successfully!

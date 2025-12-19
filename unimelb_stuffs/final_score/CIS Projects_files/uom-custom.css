@@ -1,0 +1,411 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 2, 2020, 4:03:00 PM
+    Author     : nguyen
+*/
+
+:root {
+    --content-width: 75rem;
+    --form-width: 56.25rem;
+}
+
+html {font-size: 0.9375rem;}
+.uomcontent h1 {margin-top: 1rem; font-size: 2rem;}
+.uomcontent h1.no-padding-bottom, .uomcontent h2.no-padding-bottom {padding-bottom: 0; margin-top: 0}
+.uomcontent h2 {font-size: 1.2rem;}
+.uomcontent h2.no-padding-top {padding-top: 0;}
+.uomcontent h2.table-caption, .uomcontent h4.panel-title {
+    max-width: var(--content-width);
+    font-weight: bold;
+}
+.panel-title a {text-decoration: none;}
+
+.uomcontent [role=main] table.detail-view tr th {
+    width: 300px;
+}
+button {margin-right: 1rem;}
+a.btn, button.btn {
+    border-radius: .3125rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    outline-offset: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .8rem 1rem;
+    margin-right: 1rem;
+}
+a.btn-success, button.btn-success {
+    color: #fff;
+    background-color: #0076de;
+    border-color: #0070a3;
+}
+a.btn-success:hover {
+    background-color: #9DF;
+    border-color: #0070a3;
+}
+a.btn-disable, button.btn-disable {
+    color: #fff;
+    background-color: darkgrey;
+    border-color: #999;
+    cursor: not-allowed;
+    /*pointer-events: none; */
+}
+
+input.my-dept {
+    cursor: not-allowed;
+}
+
+/*  MAIN MENU slyle */
+#mainmenu
+{
+    background:#fff url(../images/uom_menu_bg.gif) repeat-x left top;
+ /*   height: 50px;
+        width: 100%;*/
+}
+/*#mainmenu.bottom-menu {margin-bottom: 1rem;}*/
+
+#mainmenu.second-bar
+{
+    background:#fff url(../images/bg-6.gif) repeat-x left top;
+ /*    height: 50px;
+       width: 100%;*/
+}
+
+.navbar {border: none; border-radius: 0;}
+.navbar-default {margin-bottom: 0;}
+.container > .navbar-collapse {
+    margin: 0 auto;
+    width: var(--content-width);
+    height: 50px !important;
+}
+
+#mainmenu ul
+{
+    padding: 6px 10px;
+    margin: 0 auto;
+    align-self: center;
+    vertical-align: middle;
+    text-align: center;
+    max-width: 100%;       
+}
+/*#mainmenu2 ul {text-align: left; max-width: 40rem;}*/
+.uomcontent #mainmenu ul li {
+    display: inline !important; 
+    list-style-type: none;
+    float: none;
+    width: auto;
+    max-width: 12rem !important;
+    /*margin-top: 0.3rem;*/
+}
+
+#mainmenu ul li form {
+    background-color: transparent; 
+    padding: 0;
+}
+#mainmenu ul li a, .nav ul li a, .nav li > form > button.logout
+{
+/*        font-family: Arial Tahoma;*/
+/*    display: inline !important;
+    float: left;*/
+    color: #FFF;
+    background-color: transparent;
+    text-decoration: none;
+    font-size:1.125rem;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 5px 8px;
+}
+.nav li > form > button.logout{padding-top: 7px; float: right;}
+.nav > li > a {display: inline-block;}
+
+#mainmenu ul li a:hover, #mainmenu ul li.active a, #mainmenu2 ul li a:hover, #mainmenu2 ul li.active a
+{
+    color: #9DF;
+    background-color: transparent;
+    text-decoration:none;
+    font-weight: 600;
+/*        padding: 8px 10px 9px 10px;*/
+}
+
+.uomcontent #mainmenu ul li.no-link2 {margin-left: 0;}
+#mainmenu ul li a.no-link2, #mainmenu ul li a:hover.no-link2 {
+    cursor: not-allowed;
+    color: #999;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+form div.required label.control-label:after, 
+form div.field-project-industry_name label.control-label:after, 
+form div.field-project-industry_mentor_name label.control-label:after, 
+form div.field-project-industry_mentor_email label.control-label:after,
+label#start-Sup:after
+{
+    content: " * ";
+    color: red;
+}
+
+form div.t-tip label.control-label:before 
+{
+    content: " ( i ) ";
+    color: blue;
+}
+
+.req-field::after {
+    content: " (*)";
+    color: red;
+}
+
+.uomcontent .ldap-form p, .uomcontent .ldap-form h1, .uomcontent #ldap-form, .uomcontent .ldap-form div.grid-view {
+    max-width: 47.5rem;
+    margin: 1rem auto;
+}
+/*.form-group {margin-top: 2rem;}*/
+
+@media only screen and (max-width: 769px) {
+    #mainmenu, #mainmenu2 {display: none}
+    .uomcontent input[type=reset], .uomcontent input[type=submi], .uomcontent input[type=file] {max-width: 20rem;}
+    .uomcontent [role=main] table.mobile-friendly tr td {
+        display: table-cell;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    /*.uomcontent #mainmenu2 ul li, .uomcontent #mainmenu3 ul li {padding-bottom: 20px;}*/
+    .uomcontent .main-content {
+        max-width: var(--content-width);
+        margin: 0 auto;
+    }
+    .uomcontent [role=main]>header:first-child h1, .uomcontent h1, .uomcontent h2, .uomcontent [role=main] form, 
+    .uomcontent [role=main] fieldset, .uomcontent [role=main] .notice,
+    .uomcontent .site-contact, .uomcontent .site-contact h1, .uomcontent .site-contact p, .uomcontent p,
+    .uomcontent .project-update p, .uomcontent .project-update h1, .uomcontent .project-update h2, .uomcontent h3,
+    .uomcontent .project-update h3, .uomcontent ol, .uomcontent ol li, .uomcontent ul, .uomcontent ul li, .uomcontent li, .uomcontent .page-note
+    {
+        max-width: var(--form-width);
+    }
+    .uomcontent .project-view h1, .uomcontent .project-view h2, .uomcontent .project-view h3, .uomcontent .project-view p
+    {
+        max-width: var(--content-width);
+    }
+    .uomcontent div.alert {
+        max-width: var(--form-width);
+        margin: 0 auto 20px auto;
+    }
+    .uomcontent fieldset input[type=text], .uomcontent fieldset textarea, .uomcontent .styled-select.alt  {font-size: 0.9375rem;}
+    .uomcontent .styled-select.alt {height: 2.8rem;}
+    .uomcontent div.form select.alt.error { 
+            border-color: #C00; 
+            background-color: #FEE; 
+            background-repeat: no-repeat ; 
+            background-position: 97%; 
+    }
+    .uomcontent select.sm-txt {font-size: 1rem;}
+    .uomcontent fieldset input[type=text].smTxtFld, .uomcontent fieldset input[type=password].smTxtFld {width: 40rem; font-size: 0.9375rem}
+    .uomcontent fieldset textarea {height: 5rem;}
+    .uomcontent fieldset textarea.bigTxtArea {height: 18rem;}
+    .uomcontent fieldset label {width: 54.25rem; margin: 0 auto; text-align: left;}
+    label {margin-right: 1.5rem;}
+    .uomcontent div.img {
+    /*        display: inherit;*/
+            margin: 2rem auto;
+            text-align: center;
+            max-width: var(--form-width);
+    }
+    .uomcontent .w75rem ol, .uomcontent [role=main] table.items, .w75rem, .w75rem h1, .w75rem h2{
+            max-width: 75rem; 
+    /*        height: 1rem; */
+            margin: 0 auto;}
+    .uomcontent [role=main] table.items {margin-bottom: 1rem;}
+    .uomcontent [role=main] table, .uomcontent [role=main] table.mobile-friendly {max-width: var(--content-width);}
+
+    .grid-view div.summary, .grid-view .pager, .grid-view ul.pagination {
+            max-width: var(--content-width);
+            margin: 1rem auto;
+            margin-bottom: 1rem;
+    }
+    .grid-view table th.action-column {width: 100px;}
+
+    ul.pagination li {
+        display: inline;
+    }
+    
+    .uomcontent ul.pagination {
+        padding-bottom: 0;
+    }
+
+    div.w56rem {
+        max-width: 56.25rem;
+/*                height: 1rem;*/
+        margin: 0 auto;
+    }
+    
+    div.w75rem {
+        max-width: 75rem;
+/*                height: 1rem;*/
+        margin: 0 auto;
+    }
+}
+
+.uomcontent [role=main] form {padding: 0.625rem 0;}
+
+.uomcontent input[type=button], .uomcontent input[type=submit], .uomcontent input[type=reset], .uomcontent input[type=file], .uomcontent input[type=button]:hover, 
+    .uomcontent input[type=button]:focus, .uomcontent input[type=submit]:hover, .uomcontent input[type=submit]:focus, .uomcontent input[type=reset]:hover, 
+    .uomcontent input[type=reset]:focus, .uomcontent input[type=file]:hover, .uomcontent input[type=file]:focus, .uomcontent .button, .uomcontent .button:hover
+{
+    margin: 10px 20px 10px 0;
+    padding: 10px 16px;
+    border-bottom: none;
+}
+
+.uomcontent div.student-upload-form input[type=file], .uomcontent div.student-upload-form input[type=file]:hover, uomcontent div.student-upload-form input[type=file]:focus {
+    margin:  0px;
+    padding: 0px;
+    border-bottom: none;
+}
+
+.uomcontent div.student-upload-form p, .uomcontent div.adject-mark-form p {
+    padding: 0px;
+}
+.uomcontent div.student-upload-form ul {
+    padding-bottom: 0px;
+    padding-top: 5px;
+}
+
+.uomcontent a.btn {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 16px;
+    margin-right: 1rem;
+}
+
+.in {z-index: auto;}    /* Fix issue with bootstrap modal greyed out */
+.modal-dialog {top: 100px;}
+.username {text-transform: lowercase;}
+
+.testWarning {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    position: relative;
+    display: block;
+    padding: 10px;
+    border: 2px solid #369;
+    background-color: #eee;
+}
+
+.navbar-toggle {display: none;}
+
+.page-note {
+    display: block;
+    border: 1px solid gray;
+    background-color: #eee;
+    overflow: hidden;
+    padding: 0.8rem;
+    margin: 0.8rem auto;
+}
+
+.green-txt {color: green;}
+.red-txt {color: red;}
+.blue-txt {color: blue;}
+.lab-index h2 {
+    font-size: 1.1rem;
+    padding-bottom: 0;
+}
+
+.menu-link-button a {
+    margin-right: 5px;
+}
+
+.uomcontent [role="main"] table tr td.money, .uomcontent [role="main"] table tr th.money {
+    text-align: right;
+}
+
+.uomcontent a.glyphicon {
+    text-decoration: none;
+}
+
+.uomcontent li.in-table, .tooltip-inner li {padding-bottom: 0rem;}
+.tooltip-inner ol {
+    //max-width: 10rem;
+}
+
+
+h2.modal-header2 {
+    border-bottom: none;
+    margin: 0 1rem;
+    padding: 0
+}
+
+div.systeim-settings-form form div.form-group {
+/*    display: inline-table;*/
+    width: 25rem;
+}
+
+div.left-col {
+    display: table-cell;
+    width: 25rem;
+    margin-right: 0;
+}
+
+div.right-col {
+    display: table-cell;
+    width: 25rem;
+    margin-left: 28.125rem;
+}
+
+#multi-cols {
+    width: auto;
+    position: relative;
+}
+#multi-cols .checkbox-group {
+    width: 33%;
+    float: left;
+    background-color: #eee;
+    padding: .75rem;
+    margin-right: .1rem;
+}
+
+.clear-both {clear: both;}
+.checkbox-group label {font-weight: 500;}
+
+input[type="checkbox"], input[type="radio"] {margin-right: .3rem;}
+input[type=text]:readonly, .form-control[readonly] {background-color: lightgrey;}
+
+.notice li {padding-bottom: 0;}
+p.notice span.highlight {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+a.toggle-link {
+    cursor: pointer;
+}
+.uomcontent form#set-term {
+    width: 20rem;
+    display: inline-block;
+    padding: 0;
+    margin-left: 1rem;
+}
+
+/*
+*/
+
+.page-header {border-bottom: 0;}
+
+.uomcontent .main-content {
+        max-width: var(--content-width);
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }

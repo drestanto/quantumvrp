@@ -1,0 +1,54 @@
+Log started for experiment: node_visit_time, waste_collection_area, 90, P=3, Shots=512
+
+--- Running Experiment: Method=node_visit_time, Cluster=waste_collection_area, ID=90, P=3, Shots=512 ---
+
+STEP 0: Loading VRP data for waste_collection_area ID 90...
+VRP data loaded successfully for Waste Collection Area ID 90.
+Nodes: [90, 157, 538, 855]
+Depot: 90
+Customers: [157, 538, 855]
+
+STEP 1: Qubit Allocation (Node-Visit-Time Encoding)
+Total Qubits required: 6
+
+STEP 2: Loading IBM Quantum credentials and choosing a backend...
+Backend selected: ibm_brisbane
+Sampler initialized.
+
+STEP 3: Starting classical optimization for QAOA (p=3 layers)...
+  [QAOA Obj] Current parameters: gamma=[0.506 0.299 0.276], beta=[0.988 2.986 1.529]
+  [QAOA Obj] Expected Cost calculated: 695.932
+  [QAOA Obj] Current parameters: gamma=[1.506 0.299 0.276], beta=[0.988 2.986 1.529]
+  [QAOA Obj] Expected Cost calculated: 703.762
+  [QAOA Obj] Current parameters: gamma=[0.506 1.299 0.276], beta=[0.988 2.986 1.529]
+  [QAOA Obj] Expected Cost calculated: 688.160
+  [QAOA Obj] Current parameters: gamma=[0.506 1.299 1.276], beta=[0.988 2.986 1.529]
+  [QAOA Obj] Expected Cost calculated: 703.807
+  [QAOA Obj] Current parameters: gamma=[0.506 1.299 0.276], beta=[1.988 2.986 1.529]
+  [QAOA Obj] Expected Cost calculated: 729.157
+  [QAOA Obj] Current parameters: gamma=[0.506 1.299 0.276], beta=[0.988 3.986 1.529]
+  [QAOA Obj] Expected Cost calculated: 695.981
+  [QAOA Obj] Current parameters: gamma=[0.506 1.299 0.276], beta=[0.988 2.986 2.529]
+  [QAOA Obj] Expected Cost calculated: 721.340
+  [QAOA Obj] Current parameters: gamma=[0.368 0.436 0.   ], beta=[0.265 2.848 0.943]
+  [QAOA Obj] Expected Cost calculated: 701.706
+  [QAOA Obj] Current parameters: gamma=[0.411 0.    0.492], beta=[0.898 3.297 1.533]
+  [QAOA Obj] Expected Cost calculated: 733.001
+
+Optimization finished.
+Optimal Parameters: gamma=[0.506 0.299 0.276], beta=[0.988 2.986 1.529]
+Minimum Expected Cost found: 695.932
+
+STEP 4: Running QAOA circuit with optimal parameters...
+
+STEP 5: Processing results and saving to CSV...
+All measurement counts from 512 shots:
+{'111011': 10, '110101': 9, '000101': 8, '101111': 10, '001101': 6, '011111': 12, '101000': 10, '101101': 9, '001100': 5, '111111': 11, '000100': 6, '010011': 16, '000001': 7, '110011': 9, '111000': 8, '100101': 7, '111101': 11, '100001': 14, '001010': 5, '110110': 17, '110111': 10, '011010': 11, '110000': 9, '001001': 6, '110100': 8, '110001': 9, '000011': 9, '010001': 7, '100010': 10, '011100': 9, '000110': 11, '011000': 7, '111110': 11, '000000': 10, '010010': 8, '110010': 9, '000010': 10, '000111': 8, '011001': 10, '111010': 9, '010100': 10, '101011': 7, '010110': 5, '010000': 9, '010111': 7, '111100': 6, '001110': 6, '100111': 7, '001000': 6, '100000': 7, '001111': 4, '101010': 6, '111001': 10, '100110': 4, '001011': 6, '011011': 8, '101001': 5, '011110': 6, '100100': 5, '100011': 4, '101100': 3, '101110': 3, '010101': 4, '011101': 3}
+
+Calculating classical benchmark costs (brute-force)...
+Classical minimum cost found: 3.686
+
+Results for this run have been appended to 'out.csv'
+Experiment finished successfully!
+Experiment for entry 18 marked as 'done'.
+Checkpoint saved to 'out_20250922_083710.csv'

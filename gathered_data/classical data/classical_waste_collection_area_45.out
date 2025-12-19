@@ -1,0 +1,13 @@
+Log started for classical experiment: waste_collection_area, 45
+
+--- Running Classical Experiment: Cluster=waste_collection_area, ID=45 ---
+
+STEP 0: Loading VRP data for waste_collection_area ID 45...
+VRP data loaded successfully for Waste Collection Area ID 45.
+Nodes: [26, 27, 28, 45, 503]
+Depot: 45
+Customers: [26, 27, 28, 503]
+Total number of nodes (including depot): 5
+No reachable path found for this cluster (all permutations resulted in infinite distance).
+Time processed: 0.0160 seconds
+Classical experiment for entry 12 failed. 'done' status remains 'no'.

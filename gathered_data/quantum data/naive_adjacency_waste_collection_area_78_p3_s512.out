@@ -1,0 +1,56 @@
+Log started for experiment: naive_adjacency, waste_collection_area, 78, P=3, Shots=512
+
+--- Running Experiment: Method=naive_adjacency, Cluster=waste_collection_area, ID=78, P=3, Shots=512 ---
+
+STEP 0: Loading VRP data for waste_collection_area ID 78...
+VRP data loaded successfully for Waste Collection Area ID 78.
+Nodes: [78, 149]
+Depot: 78
+Customers: [149]
+
+STEP 1: Qubit Allocation (QUBO Encoding)
+Total Qubits required (N^2): 4
+
+STEP 2: Loading IBM Quantum credentials and choosing a backend...
+Backend selected: ibm_brisbane
+Sampler initialized.
+
+STEP 3: Starting classical optimization for QAOA (p=3 layers)...
+  [QAOA Obj] Current parameters: gamma=[0.342 0.701 0.404], beta=[1.412 4.389 5.247]
+  [QAOA Obj] Expected Cost calculated: 4996.094
+  [QAOA Obj] Current parameters: gamma=[1.342 0.701 0.404], beta=[1.412 4.389 5.247]
+  [QAOA Obj] Expected Cost calculated: 4976.562
+  [QAOA Obj] Current parameters: gamma=[1.342 1.701 0.404], beta=[1.412 4.389 5.247]
+  [QAOA Obj] Expected Cost calculated: 4892.578
+  [QAOA Obj] Current parameters: gamma=[1.342 1.701 1.404], beta=[1.412 4.389 5.247]
+  [QAOA Obj] Expected Cost calculated: 4986.328
+  [QAOA Obj] Current parameters: gamma=[1.342 1.701 0.404], beta=[2.412 4.389 5.247]
+  [QAOA Obj] Expected Cost calculated: 5119.141
+  [QAOA Obj] Current parameters: gamma=[1.342 1.701 0.404], beta=[1.412 5.389 5.247]
+  [QAOA Obj] Expected Cost calculated: 5039.062
+  [QAOA Obj] Current parameters: gamma=[1.342 1.701 0.404], beta=[1.412 4.389 6.247]
+  [QAOA Obj] Expected Cost calculated: 5105.469
+  [QAOA Obj] Current parameters: gamma=[0.397 0.785 0.143], beta=[0.779 3.979 4.653]
+  [QAOA Obj] Expected Cost calculated: 5150.391
+  [QAOA Obj] Current parameters: gamma=[0.377 0.38  0.707], beta=[1.473 4.596 5.334]
+  [QAOA Obj] Expected Cost calculated: 4986.328
+
+Optimization finished.
+Optimal Parameters: gamma=[0.377 0.38  0.707], beta=[1.473 4.596 5.334]
+Minimum Expected Cost found: 4986.328
+
+STEP 4: Running QAOA circuit with optimal parameters...
+
+STEP 5: Processing results and saving to CSV...
+All measurement counts from 512 shots:
+{'0000': 28, '0101': 35, '1101': 28, '0111': 42, '1011': 36, '1100': 35, '1001': 20, '1000': 46, '1110': 20, '1111': 33, '0110': 56, '0011': 28, '0001': 25, '0100': 27, '1010': 26, '0010': 27}
+
+Calculating classical benchmark costs (brute-force for QUBO)...
+Classical minimum cost found: 0.432
+Classical average cost: 0.432
+Classical maximum cost: 0.432
+
+Results for this run have been appended to 'out.csv'
+Experiment finished successfully!
+Experiment for entry 13 marked as 'done'.
+Checkpoint saved to 'out_20250922_083213.csv'

@@ -1,0 +1,114 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 2, 2020, 4:03:39 PM
+    Author     : nguyen
+*/
+
+.form-head {
+    background-color: lightgray;
+    padding-left: 12px;
+}
+
+.uomcontent [role="main"] table.hr-table-view td.form-label, th.form-label {
+    background-color: lightblue;
+    width: 30%;
+}
+
+a.button {
+    color: black;
+}
+.hr-view table.mobile-friendly {
+    
+    padding-top: 0;
+    margin-top: 0
+}
+
+ul.has-errors li {
+    color: red;
+    
+}
+
+.uomcontent [role="main"] table.hr-table-view {   
+    margin-top: 0px;
+}
+
+.uomcontent [role="main"] table.form-table tr td{
+    /*border: none;*/
+    vertical-align: middle;
+} 
+
+.uomcontent li.proj-alloc, .uomcontent li span.proj-alloc {
+    color: gray;
+    text-decoration: line-through;
+}
+
+#pdf-main {
+    max-width: 56.25rem;
+    margin: 0 auto;
+}
+
+.important-note { color: red; font-style: italic}
+.optgroup { font-weight: bold; padding: 0; margin: 0}
+.close-date span {color: red; font-weight: bold}
+
+.uomcontent .notice li.ALLOCATED, .uomcontent .notice--success li.ALLOCATED a, li.ALLOCATED, ul.proj-list li.ALLOCATED a {
+    color: red;
+    font-weight: bold   
+}
+
+li.avoid, ul.proj-list li.avoid a, label.avoid {
+    color: red;
+    font-weight: 500;
+}
+
+li.REJECT, ul.proj-list li.REJECT a, .not-avail {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.orange {color: orange;}
+.red {color: red;}
+.green {color: green;}
+.grey {color: lightgrey;}
+.blue {color: #0073ea;}
+
+.hint-block, .extra-info {
+    color: #0066cc;
+    font-style: italic;
+    font-size: 0.85rem;
+    font-weight: 550;
+}
+.extra-info {color: #0066cc;}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.not-selected {   
+    color: green;
+}
+
+.selected {
+    color: green;
+}
+
+.glyphicon {margin-right: 0.15rem;}
+.read-only {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+table.kv-grid-table li {
+    list-style: none;
+}
+
+span.warning {
+    background-color: lightyellow !important;
+}
+
+span.warning-notenrolled, tr.warning-notenrolled {
+    background-color: #ffe6e6 !important;
+}
